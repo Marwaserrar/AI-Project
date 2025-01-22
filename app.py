@@ -61,7 +61,7 @@ async def predict_image(file: UploadFile = File(...)):
             
             predictions.append({
                 "label": label,
-                "confidence": confidence,
+                "confidence": round(confidence * 100, 2),  
                 "bbox": bbox
             })
             
