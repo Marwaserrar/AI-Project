@@ -1,16 +1,22 @@
+version: "3.8"
+
 services:
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: dodolr/frontend:latest 
     ports:
       - "3000:3000"
     depends_on:
       - backend
+    networks:
+      - app-network
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: dodolr/back:latest  
     ports:
       - "8000:8000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
