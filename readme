@@ -1,4 +1,4 @@
-best.pt contient les poids des réseaux utilisés.
+backend/best.pt contient les poids des réseaux utilisés.
 Pour tester le fonctionnement, l'application est conteneurisée; il suffit d'exécuter docker-compose up.
 
 ==> Liens vers les images de l'application:
