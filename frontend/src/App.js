@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css"; // Fichier CSS pour les styles personnalisés
+import "./App.css"; 
 
 function App() {
   const [image, setImage] = useState(null);
@@ -19,7 +19,7 @@ function App() {
     const formData = new FormData();
     formData.append("file", image);
 
-    const response = await fetch("http://127.0.0.1:8000/predict/", {
+    const response = await fetch("http://localhost:8000/predict/", {
       method: "POST",
       body: formData,
     });
@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1 className="title">Détection des fractures</h1>
+        <h1 className="title">Fractura</h1>
         <p className="subtitle">
           Bienvenue dans votre monde virtuel ! Plus besoin d'un radiologiste !
         </p>
