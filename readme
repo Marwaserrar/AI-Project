@@ -1,1 +1,6 @@
-best.pt contient les poids des réseaux utilisés
+best.pt contient les poids des réseaux utilisés.
+Pour tester le fonctionnement, l'application est conteneurisée; il suffit d'exécuter docker-compose up.
+
+==> Liens vers les images de l'application:
+      ** frontend: https://hub.docker.com/r/dodolr/frontend
+      ** backend: https://hub.docker.com/r/dodolr/back
